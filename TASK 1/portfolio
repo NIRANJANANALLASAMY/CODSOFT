@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #009ba0;
+        }
+        nav { 
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .profile-section {
+            background-image:url(bg1.jpeg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px;
+            margin-top: 1px;
+        }
+        .profile-section img {
+            border-radius: 10px;
+            margin-right: 90px;
+        }
+        .profile-section .profile-details {
+            max-width: 600px;
+        }
+        .profile-section h3 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .profile-section p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+        }
+        #about {
+            text-align: center;
+            min-height: 0vh;
+            padding: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px; /* Adjust this value for more or less space between icons */
+        }
+
+        #social-links img {
+        margin: 0 10px;
+        }
+
+    .projects-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    .pro-card {
+    background-color: #f0f0f0; /* Light grey background color */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%; /* Adjust the width to fit your needs */
+    box-shadow: 0 4px 8px rgba(25, 178, 229, 0.2);
+    transition: transform 0.2s;
+    }
+
+    .pro-card:hover {
+    transform: scale(1.02);
+    }
+
+    .pro-card h3 {
+    margin-bottom: 10px;
+    color:#009ba0 ; /* Dark text color */
+    }
+
+    .pro-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+    .pro-card ul li {
+    margin-bottom: 8px;
+    color: #666; /* Lighter text color */
+    }
+
+
+        #skills {
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            padding-bottom: 40px;
+        }
+        #skills .img {
+            flex: 1;
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 300px;
+            text-align: right;
+        }
+        #skills .skills-content {
+            flex: 1;
+            width: 60%;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .certification-card {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .certification-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .certification-card h3 {
+            margin: 0 0 5px 0;
+        }
+        .certification-card p {
+            margin: 0;
+            color: #666;
+        }
+        .skill-bar {
+            margin: 0 0 15px;
+            width: 80%;
+        }
+        .skill-bar span {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 40px;
+            border-radius: 5px;
+        }
+        .java {
+            width: 45%;
+            background-color: #009ba0;
+        }
+        .html {
+            width: 80%;
+            background-color: #009ba0;
+        }
+        .css {
+            width: 70%;
+            background-color: #009ba0;
+        }
+        .javascript {
+            width: 60%;
+            background-color: #009ba0;
+        }
+        #form{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#soft-skills">Soft Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="profile-section">
+        <img src="pro.jpg" alt="pic" height="500px" width="500px">
+        <div class="profile-details">
+            <h3>Hi, I'm Niranjana N</h3>
+            <p>Software Engineering</p>
+            <p>Pre final-year student</p>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>I’m Niranjana N, a 3rd-year Information Technology student at Kongu Engineering College. With a passion for technology and innovation, I am dedicated to developing solutions that bridge the gap between complex problems and practical applications. My academic journey, complemented by hands-on projects and certifications, has equipped me with a solid foundation in software development, web technologies, and data management.</p>
+        <p>I am constantly exploring new technologies and enhancing my skills through various courses and certifications. My projects reflect my commitment to learning and applying my knowledge to real-world challenges.</p>
+        <p>I thrive in collaborative environments and am eager to contribute to teams working on cutting-edge technology projects. My goal is to leverage my technical skills and passion for technology to drive impactful solutions in the IT industry.</p>
+        <a href="resume.html" class="resume-button" target="_blank">View My Resume</a>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-section">
+            <div class="pro-card">
+                <h3>Ideathon</h3>
+                <ul>
+                    <li>Topic on "Ethical AI"</li>
+                    <li>Collaborated with a team to generate innovative solutions addressing specific problems or challenges.</li>
+                    <li>Conducted extensive research to validate the feasibility and impact of proposed ideas.</li>
+                    <li>Presented a comprehensive plan outlining the implementation and potential benefits of the solution.</li>
+                </ul>
+            </div>
+            <div class="pro-card">
+                <h3>Hackathon - Bus Tracking System</h3>
+                <ul>
+                    <li>ON Bus Tracking system</li>
+                    <li>Developed a real-time bus tracking system using a specific technology stack, e.g., GPS, JavaScript, etc.</li>
+                    <li>Implemented a user-friendly interface that displays live bus locations and estimated arrival times.</li>
+                    <li>Enhanced commuter experience by reducing waiting times and providing reliable transit information.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-content">
+            <div class="skill-bar">
+                <span>Java</span>
+                <div class="bar">
+                    <div class="progress java"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>HTML</span>
+                <div class="bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>CSS</span>
+                <div class="bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>JavaScript</span>
+                <div class="bar">
+                    <div class="progress javascript"></div>
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            
+    </section>
+
+    <section id="soft-skills">
+        <h2 class="section-title">Soft Skills</h2><br><br>
+        <p><strong>Communication:</strong> <br>Excellent verbal and written communication skills, capable of conveying complex ideas clearly and effectively.</p>
+        <p><strong>Teamwork:</strong><br> Experienced in collaborating with diverse teams to achieve common goals, with a focus on mutual respect and inclusivity.</p>
+        <p><strong>Problem-Solving:</strong><br> Adept at identifying problems, analyzing options, and implementing innovative solutions in a timely manner.</p>
+        <p><strong>Time Management:</strong><br> Proficient in managing multiple tasks and priorities efficiently, ensuring timely project completion.</p>
+    </section>
+
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certification-card" onclick="window.open('https://onlinecourses.nptel.ac.in/noc24_cs04/announcements?force=true', '_blank');">
+            <h3>NPTEL</h3>
+            <p>Privacy and Security in Social Media</p>
+        </div><br>
+
+        <div class="certification-card" onclick="window.open('https://onlinecourses.nptel.ac.in/noc22_cs84', '_blank');">
+            <h3>NPTEL</h3>
+            <p>Design & Implementation of Human-Computer Interfaces</p>
+        </div><br>
+
+        <div class="certification-card" onclick="window.open('https://www.mygreatlearning.com/ai-basics-for-beginners', '_blank');">
+            <h3>Great Learning</h3>
+            <p>Introduction to AI</p>
+        </div><br>
+
+        <div class="certification-card" onclick="window.open('https://www.mygreatlearning.com/sql-for-beginners', '_blank');">
+            <h3>Great Learning</h3>
+            <p>SQL Project for Beginners</p>
+        </div><br>
+
+        <div class="certification-card" onclick="window.open('https://springboard.infosys.com/learn', '_blank');">
+            <h3>Infosys Springboard</h3>
+            <p>Database Management System</p>
+        </div><br><br>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>  
+        <br>
+        <p>Contact Num: 978717299</p>
+        <p>Address: 6/1 Kovai Main road<br>Pallagoundan Palayam<br>Tiruppur</p>
+        <p>Email: niranjanan.22it@kongu.edu</p>
+        <p>GitHub: <a href="https://github.com/NIRANJANANALLASAMY" target="_blank">https://github.com/NIRANJANANALLASAMY</a></p>
+    </section>
+    <div id="social-links">
+        <a href="https://www.linkedin.com/in/niranjana-nallasamy-520311234/" target="_blank"><img src="logo3.png" alt="LinkedIn   " width="30px"></a>
+        <a href="mailto:niranjanan.22it@kongu.edu" target="_blank"><img src="logo2.png" alt="Mail  " width="30px"></a>
+        <a href="https://github.com/NIRANJANANALLASAMY" target="_blank"><img src="logo.png" alt="GitHub" width="30px"></a>
+    </div>
+    <div id="form">
+        <h2>Query form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="reason">Reason to Contact:</label>
+        <input type="text" id="reason" name="reason"><br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    
+</body>
+</html>
