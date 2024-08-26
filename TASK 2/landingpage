@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        section {
+            padding: 60px 0;
+        }
+        #home {
+        background-image: url(front2.avif);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navbar {
+            background-color: #000;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .card {
+            margin: 15px 0;
+        }
+        .feedback-form input, .feedback-form textarea {
+            margin-bottom: 10px;
+        }
+        .activity-card img, .package-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#home">Adventure Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#activity">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#booking">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#packages">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Feedback</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Experience the thrill of the outdoors with our guided adventures.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>We are a leading adventure travel company, offering guided tours and thrilling experiences around the globe.Exploring amazing travel destinations across the countryside, new culture, lifestyle, traditions and travelling to some of the exciting destinations on this earth is something that can make the busy and boring life of the people interesting. </p>
+            <p>Whether adventure means a mountain biking in Garhwal region, river rafting on the Ganga, Trans-Himalayan jeep safaris or trekking and camping on the high mountains of Himalayas, we assure a safe yet thrilling adventure experience to our travellers. Meticulous planning, safety and eco-sense mix together help us to add on smiles on the face of our every traveller. Our prime objective is to offer cost effective adventure trips to all the passionate and daring travellers located across the globe</p>
+            <img src="about.png" width="100%" height="100%">
+        </div>
+    </section>
+
+    <!-- Activity Section -->
+<section id="activity">
+    <div class="container">
+        <h2 class="text-center">Activities</h2>
+        <div class="row">
+            <!-- Activity 1 -->
+            <div class="col-md-4">
+                <div class="card activity-card">
+                    <img src="hicking1.jpg" class="card-img-top" alt="Activity 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Hiking</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Activity 2 -->
+            <div class="col-md-4">
+                <div class="card activity-card">
+                    <img src="kayaking.jpeg" class="card-img-top" alt="Activity 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Kayaking</h5>
+                                        </div>
+                </div>
+            </div>
+            <!-- Activity 3 -->
+            <div class="col-md-4">
+                <div class="card activity-card">
+                    <img src="hicking.jpeg" class="card-img-top" alt="Activity 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rock Climbing</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Activity 4 -->
+            <div class="col-md-4">
+                <div class="card activity-card">
+                    <img src="paraair.webp" class="card-img-top" alt="Activity 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Para-giliding</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Activity 5 -->
+            <div class="col-md-4">
+                <div class="card activity-card">
+                    <img src="zipline1.webp" class="card-img-top" alt="Activity 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Zip Lining</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Activity 6 -->
+            <div class="col-md-4">
+                <div class="card activity-card">
+                    <img src="jumping.jpeg" class="card-img-top" alt="Activity 6">
+                    <div class="card-body">
+                        <h5 class="card-title">jumping</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Packages Section -->
+<section id="packages" class="bg-light">
+    <div class="container">
+        <h2 class="text-center">Packages</h2>
+        <div class="row">
+            <!-- Package 1 -->
+            <div class="col-md-4">
+                <div class="card package-card">
+                    <img src="book1.webp" class="card-img-top" alt="Package 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Adventure in the Himalayan range</h5>
+                        <p class="card-text">A 7-day hiking and climbing adventure in the Himalayan mountain.</p>
+                        <p class="card-text">Price: 12,800</p>
+                        <p class="card-text">Duration: 7 Days</p>
+                        <button class="btn btn-primary add-to-cart" data-package="Adventure in the Himalayan range" data-price="12800">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Package 2 -->
+            <div class="col-md-4">
+                <div class="card package-card">
+                    <img src="book2.jpg" class="card-img-top" alt="Package 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Beach Paradise</h5>
+                        <p class="card-text">Relax on the pristine beaches of the Maldives.</p>
+                        <p class="card-text">Price: 21,000</p>
+                        <p class="card-text">Duration: 8 Days</p>
+                        <button class="btn btn-primary add-to-cart" data-package="Beach Paradise" data-price="21000">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Package 3 -->
+            <div class="col-md-4">
+                <div class="card package-card">
+                    <img src="book3.jpeg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Safari Adventure</h5>
+                        <p class="card-text">Explore the African wilderness on a 10-day safari.</p>
+                        <p class="card-text">Price: 14,200</p>
+                        <p class="card-text">Duration: 10 Days</p>
+                        <button class="btn btn-primary add-to-cart" data-package="Safari Adventure" data-price="14200">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Package 4 -->
+            <div class="col-md-4">
+                <div class="card package-card">
+                    <img src="book4.jpg" class="card-img-top" alt="Package 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultural Journey</h5>
+                        <p class="card-text">Immerse yourself in the rich culture of India.</p>
+                        <p class="card-text">Price: 8,500</p>
+                        <p class="card-text">Duration: 8 Days</p>
+                        <button class="btn btn-primary add-to-cart" data-package="Cultural Journey" data-price="8500">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Package 5 -->
+            <div class="col-md-4">
+                <div class="card package-card">
+                    <img src="book5.jpg" class="card-img-top" alt="Package 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Island Getaway</h5>
+                        <p class="card-text">Discover the beauty of the Netrani islands.</p>
+                        <p class="card-text">Price: 12,800</p>
+                        <p class="card-text">Duration: 6 Days</p>
+                        <button class="btn btn-primary add-to-cart" data-package="Island Getaway" data-price="12800">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Package 6 -->
+            <div class="col-md-4">
+                <div class="card package-card">
+                    <img src="book6.webp" class="card-img-top" alt="Package 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Special interset</h5>
+                        <p class="card-text">Experience adventure with your unique plan.</p>
+                        <p class="card-text">Price: depends on plan.</p>
+                        <p class="card-text">Duration: 7 Days (fixible)</p>
+                        <button class="btn btn-primary add-to-cart" data-package="Special interset" data-price="Varies">Add to Cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <div class="container">
+            <h2 class="text-center">Booking</h2>
+            <p>Your selected packages and booking information will be displayed here:</p>
+            <div id="booking-details"></div> <!-- This will display the selected packages -->
+        </div>
+    </section>
+    
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+        const packageName = this.getAttribute('data-package');
+        const price = this.getAttribute('data-price');
+        const bookingDetails = document.getElementById('booking-details');
+        bookingDetails.innerHTML += `<p>${packageName} - ₹${price}</p>`;
+    });
+});
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Our Contact Details</h5>
+                    <p class="card-text">
+                        Address: 123 jam street,ahmedabad,Gujarat<br>
+                        Email: contact@adventuretravel.com<br>
+                        Instagram: @adventuretravel<br>
+                        Phone: 90489 47281. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+        <div class="container">
+            <h2 class="text-center">Feedback</h2>
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="trip">Trip</label>
+                    <input type="text" class="form-control" id="trip" placeholder="Enter your trip name">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <input type="number" class="form-control" id="rating" placeholder="Rate your experience">
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-control" id="comments" rows="4" placeholder="Share your experience"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
